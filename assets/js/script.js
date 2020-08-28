@@ -27,7 +27,6 @@ function validar() {
             alert("no funka");
         };
     }
-    alert(validarMail);
 
 
     var especialidad = document.getElementById("especialidad").value;
