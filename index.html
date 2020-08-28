@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expresiones Regulares</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <h1>Formulario de registro</h1>
+    <form class="form-register" onsubmit="return validar();">
+        <div class="container">
+            <label>Rut</label>
+            <input type="text" id="rut" name="rut" placeholder="11.111.111-1">
+            <label>Nombres</label>
+            <input type="text" id="nombres" name="nombres" placeholder="Pedro Pablo">
+            <label>Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="López Jara">
+            <label>Edad</label>
+            <input type="text" id="edad" name="edad">
+            <label>Email</label>
+            <input type="text" id="email" name="email" placeholder="mail@test.com">
+            <label>Especialidad</label>
+            <select id="especialidad" name="especialidad">
+                <option value="dental">Dental</option>
+                <option value="radiologia">Radiología</option>
+                <option value="medicina">Medicina General</option>
+                <option value="pediatria">Pediatría</option>
+            </select>
+            <label>Fecha</label>
+            <input type="text" id="fecha" name="fecha" placeholder="dd-mm-yyyy">
+            <label>Hora</label>
+            <select id="hora" name="hora">
+                <option value="hora1">10:00</option>
+                <option value="hora2">10:30</option>
+                <option value="hora3">11:00</option>
+                <option value="hora4">11:30</option>
+            </select>
+            <input type="submit" id="enviar" value="Reservar">
+        </div>
+    </form>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
