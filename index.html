@@ -2,48 +2,62 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Expresiones Regulares</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <section class="seccion-form">
+        <h1 class="titulo">RESERVA TU HORA</h1>
+        <form class="form-class" method="GET" id="formulario" action="">
+            <div class="container">
+                <div class="formulario">
+                    <label for="rut"> Rut del paciente </label>
+                    <input type="text" id="rut" name="rut" placeholder="Ej. 11.111.111-2" class="input-form" />
+                    <label for="nombres"> Nombres</label>
+                    <input type="text" id="nombres" name="nombres" placeholder="" class="input-form" />
+                    <label for="apellidos"> Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="" class="input-form" />
+                    <label for="edad"> Edad</label>
+                    <input type="text" id="edad" name="edad" placeholder="" class="input-form" />
 
-    <h1>Formulario de registro</h1>
-    <form class="form-register" onsubmit="return validar();">
-        <div class="container">
-            <label>Rut</label>
-            <input type="text" id="rut" name="rut" placeholder="11.111.111-1">
-            <label>Nombres</label>
-            <input type="text" id="nombres" name="nombres" placeholder="Pedro Pablo">
-            <label>Apellidos</label>
-            <input type="text" id="apellidos" name="apellidos" placeholder="López Jara">
-            <label>Edad</label>
-            <input type="text" id="edad" name="edad">
-            <label>Email</label>
-            <input type="text" id="email" name="email" placeholder="mail@test.com">
-            <label>Especialidad</label>
-            <select id="especialidad" name="especialidad">
-                <option value="dental">Dental</option>
-                <option value="radiologia">Radiología</option>
-                <option value="medicina">Medicina General</option>
-                <option value="pediatria">Pediatría</option>
-            </select>
-            <label>Fecha</label>
-            <input type="text" id="fecha" name="fecha" placeholder="dd-mm-yyyy">
-            <label>Hora</label>
-            <select id="hora" name="hora">
-                <option value="hora1">10:00</option>
-                <option value="hora2">10:30</option>
-                <option value="hora3">11:00</option>
-                <option value="hora4">11:30</option>
-            </select>
-            <input type="submit" id="enviar" value="Reservar">
+                    <label for="correo"> Correo</label>
+                    <input type="text" id="correo" name="correo" placeholder=" Ej. micorreo@correo.com"
+                        class="input-form" />
+
+                    <label for="especialidad"> Especialidad</label>
+                    <div class="content-select">
+                        <select name="especialidad" id="especialidad" class="input-form">
+                            <option value="0" selected disabled>Seleccione...</option>
+                            <option value="Traumatologia">Traumatología</option>
+                            <option value="Radiologia">Radiología</option>
+                            <option value="Dental">Dental</option>
+                            <option value="Kinesiologia">Kinesiología</option>
+                        </select>
+                    </div>
+                    <label for="fecha">Fecha</label>
+                    <input type="text" id="fecha" name="fecha" placeholder="Ej. 31/01/2020" class="input-form" />
+                    <label for="hora">Hora</label>
+                    <div class="content-select">
+                        <select name="hora" id="hora" class="input-form">
+                            <option value="0" selected disabled>Seleccione...</option>
+                            <option value="09:30">09:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="14:15">14:15</option>
+                            <option value="16:00">16:00</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Reservar" class="btn-enviar" />
+                </div>
+        </form>
         </div>
-    </form>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
+
 </html>
